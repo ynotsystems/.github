@@ -1,0 +1,13 @@
+default_stages: [pre-commit]
+fail_fast: true
+default_language_version:
+  golang: system
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+  - repo: https://github.com/adhtruong/mirrors-typos
+    rev: v1.49.0
+    hooks:
+      - id: typos
